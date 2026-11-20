@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0">
+  <kcfgfile name=""/>
+  <group name="">
+    <entry name="Duration" type="UInt"><default>400</default></entry>
+    <entry name="Distance" type="Int"><default>40</default></entry>
+  </group>
+</kcfg>

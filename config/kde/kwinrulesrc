@@ -1,0 +1,21 @@
+[9f1fdb78-42e9-4a2b-a4c0-707ca02929de]
+Description=Window settings for com.spotify.Client
+screen=1
+screenrule=3
+title=Spotify Premium
+types=1
+wmclass=\scom.spotify.Client
+wmclasscomplete=true
+wmclassmatch=1
+
+[General]
+Order=ea7589c4-70eb-4997-8cf3-bb5c841e2606,9f1fdb78-42e9-4a2b-a4c0-707ca02929de
+
+[ea7589c4-70eb-4997-8cf3-bb5c841e2606]
+Description=Window settings for org.gnome.Terminal
+opacityactiverule=2
+title=harel@arch:~
+types=1
+wmclass=gnome-terminal-server org.gnome.Terminal
+wmclasscomplete=true
+wmclassmatch=1

@@ -1,0 +1,12 @@
+{
+    "KPackageStructure": "KWin/WindowSwitcher",
+    "KPlugin": {
+        "Authors": [{ "Name": "Claude" }],
+        "Description": "Minimal thumbnail switcher shown identically on every screen",
+        "Id": "clean_glide",
+        "License": "GPL",
+        "Name": "Clean Glide (all screens)",
+        "Version": "2.0"
+    },
+    "X-Plasma-API-Minimum-Version": "6.0"
+}

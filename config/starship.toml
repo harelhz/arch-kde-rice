@@ -1,0 +1,91 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+add_newline = true
+
+format = """
+[░▒▓](#0a3d91)\
+[  ](bg:#0a3d91 fg:#e6f1ff)\
+[](bg:#1565c0 fg:#0a3d91)\
+$username\
+[](bg:#1e88e5 fg:#1565c0)\
+$directory\
+[](fg:#1e88e5 bg:#0d47a1)\
+$git_branch\
+$git_status\
+[](fg:#0d47a1 bg:#102a43)\
+$python\
+$nodejs\
+$rust\
+$golang\
+$c\
+[](fg:#102a43 bg:#0b1a2e)\
+$time\
+[ ](fg:#0b1a2e)\
+$cmd_duration
+$character"""
+
+[username]
+show_always = true
+style_user = "bg:#1565c0 fg:#e6f1ff bold"
+style_root = "bg:#1565c0 fg:#ff5370 bold"
+format = '[ $user ]($style)'
+
+[directory]
+style = "bg:#1e88e5 fg:#ffffff bold"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Projects" = " "
+"projects" = " "
+
+[git_branch]
+symbol = ""
+style = "bg:#0d47a1"
+format = '[[ $symbol $branch ](fg:#e6f1ff bg:#0d47a1)]($style)'
+
+[git_status]
+style = "bg:#0d47a1"
+format = '[[($all_status$ahead_behind )](fg:#7fdbff bg:#0d47a1)]($style)'
+
+[python]
+symbol = ""
+style = "bg:#102a43"
+format = '[[ $symbol ($version) ](fg:#7fdbff bg:#102a43)]($style)'
+
+[nodejs]
+symbol = ""
+style = "bg:#102a43"
+format = '[[ $symbol ($version) ](fg:#7fdbff bg:#102a43)]($style)'
+
+[rust]
+symbol = ""
+style = "bg:#102a43"
+format = '[[ $symbol ($version) ](fg:#7fdbff bg:#102a43)]($style)'
+
+[golang]
+symbol = ""
+style = "bg:#102a43"
+format = '[[ $symbol ($version) ](fg:#7fdbff bg:#102a43)]($style)'
+
+[c]
+symbol = ""
+style = "bg:#102a43"
+format = '[[ $symbol ($version) ](fg:#7fdbff bg:#102a43)]($style)'
+
+[time]
+disabled = false
+time_format = "%R"
+style = "bg:#0b1a2e"
+format = '[[  $time ](fg:#7fdbff bg:#0b1a2e)]($style)'
+
+[cmd_duration]
+min_time = 2000
+format = '[ 󱦟 $duration](fg:#7c5cff bold)'
+
+[character]
+success_symbol = '[❯❯](bold fg:#00e5ff)'
+error_symbol = '[❯❯](bold fg:#ff5370)'
+vimcmd_symbol = '[❮❮](bold fg:#7c5cff)'

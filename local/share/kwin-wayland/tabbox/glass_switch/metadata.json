@@ -1,0 +1,12 @@
+{
+    "KPackageStructure": "KWin/WindowSwitcher",
+    "KPlugin": {
+        "Authors": [{ "Name": "Claude" }],
+        "Description": "Live window previews on a liquid glass panel",
+        "Id": "glass_switch",
+        "License": "GPL",
+        "Name": "Glass Switch",
+        "Version": "1.0"
+    },
+    "X-Plasma-API-Minimum-Version": "6.0"
+}

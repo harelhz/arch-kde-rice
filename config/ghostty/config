@@ -1,0 +1,24 @@
+background-opacity = 0.75
+background-blur = false
+window-padding-x = 10
+window-padding-y = 10
+background = #000000
+font-size = 14
+window-width = 120
+window-height = 35
+
+# >>> colors >>>
+# Vivid palette; your black background above still wins over the theme's.
+theme = Snazzy
+# Bold text uses the bright palette, so highlighted output pops more.
+bold-color = bright
+# Lifts any color that would be unreadable on the black background.
+minimum-contrast = 1.1
+# <<< colors <<<
+
+# >>> hide password lock >>>
+# Hide the lock icon Ghostty shows at password prompts (plain hidden input).
+custom-shader = /home/harel/.config/ghostty/shaders/hide-password-lock.glsl
+# Only redraw when the terminal changes; the shader doesn't animate.
+custom-shader-animation = false
+# <<< hide password lock <<<

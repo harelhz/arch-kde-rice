@@ -1,0 +1,12 @@
+{
+    "KPackageStructure": "KWin/WindowSwitcher",
+    "KPlugin": {
+        "Authors": [{ "Name": "Claude" }],
+        "Description": "One row of app icons on a dock-style rounded panel",
+        "Id": "dock_switch",
+        "License": "GPL",
+        "Name": "Dock Switch",
+        "Version": "1.0"
+    },
+    "X-Plasma-API-Minimum-Version": "6.0"
+}

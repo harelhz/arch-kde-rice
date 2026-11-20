@@ -1,0 +1,10 @@
+[Daemon]
+Timeout=10
+
+[Greeter]
+WallpaperPlugin=org.kde.image
+
+[Greeter][Wallpaper][org.kde.image][General]
+FillMode=2
+Image=/home/harel/.local/share/wallpapers/arch-kde-rice/wallpaper.jpg
+PreviewImage=/home/harel/.local/share/wallpapers/arch-kde-rice/wallpaper.jpg

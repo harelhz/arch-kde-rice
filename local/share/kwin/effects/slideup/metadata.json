@@ -1,0 +1,14 @@
+{
+    "KPackageStructure": "KWin/Effect",
+    "KPlugin": {
+        "Category": "Window Open/Close Animation",
+        "Description": "Windows slide up and fade in when opened, and drop slightly and fade out when closed",
+        "EnabledByDefault": false,
+        "Icon": "preferences-system-windows-effect-scale",
+        "Id": "slideup",
+        "License": "GPL",
+        "Name": "Slide Up"
+    },
+    "X-KWin-Exclusive-Category": "toplevel-open-close-animation",
+    "X-Plasma-API": "javascript"
+}
