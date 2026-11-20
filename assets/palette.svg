@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="164" viewBox="0 0 960 164" font-family="JetBrains Mono, monospace">
+<rect x="0" y="0" width="96" height="120" rx="14" fill="#000000" stroke="#888" stroke-opacity="0.35"/>
+<text x="48.0" y="138" text-anchor="middle" font-size="13" fill="#8b949e">#000000</text>
+<text x="48.0" y="156" text-anchor="middle" font-size="12" fill="#8b949e">bg 75%</text>
+<rect x="108" y="0" width="96" height="120" rx="14" fill="#0a3d91" stroke="#888" stroke-opacity="0.35"/>
+<text x="156.0" y="138" text-anchor="middle" font-size="13" fill="#8b949e">#0a3d91</text>
+<text x="156.0" y="156" text-anchor="middle" font-size="12" fill="#8b949e">navy</text>
+<rect x="216" y="0" width="96" height="120" rx="14" fill="#1565c0" stroke="#888" stroke-opacity="0.35"/>
+<text x="264.0" y="138" text-anchor="middle" font-size="13" fill="#8b949e">#1565c0</text>
+<text x="264.0" y="156" text-anchor="middle" font-size="12" fill="#8b949e">royal</text>
+<rect x="324" y="0" width="96" height="120" rx="14" fill="#1e88e5" stroke="#888" stroke-opacity="0.35"/>
+<text x="372.0" y="138" text-anchor="middle" font-size="13" fill="#8b949e">#1e88e5</text>
+<text x="372.0" y="156" text-anchor="middle" font-size="12" fill="#8b949e">azure</text>
+<rect x="432" y="0" width="96" height="120" rx="14" fill="#4a90ff" stroke="#888" stroke-opacity="0.35"/>
+<text x="480.0" y="138" text-anchor="middle" font-size="13" fill="#8b949e">#4a90ff</text>
+<text x="480.0" y="156" text-anchor="middle" font-size="12" fill="#8b949e">prompt</text>
+<rect x="540" y="0" width="96" height="120" rx="14" fill="#aa8cff" stroke="#888" stroke-opacity="0.35"/>
+<text x="588.0" y="138" text-anchor="middle" font-size="13" fill="#8b949e">#aa8cff</text>
+<text x="588.0" y="156" text-anchor="middle" font-size="12" fill="#8b949e">git</text>
+<rect x="648" y="0" width="96" height="120" rx="14" fill="#ec5f67" stroke="#888" stroke-opacity="0.35"/>
+<text x="696.0" y="138" text-anchor="middle" font-size="13" fill="#8b949e">#ec5f67</text>
+<text x="696.0" y="156" text-anchor="middle" font-size="12" fill="#8b949e">error</text>
+<rect x="756" y="0" width="96" height="120" rx="14" fill="#6e788c" stroke="#888" stroke-opacity="0.35"/>
+<text x="804.0" y="138" text-anchor="middle" font-size="13" fill="#8b949e">#6e788c</text>
+<text x="804.0" y="156" text-anchor="middle" font-size="12" fill="#8b949e">muted</text>
+<rect x="864" y="0" width="96" height="120" rx="14" fill="#e6f1ff" stroke="#888" stroke-opacity="0.35"/>
+<text x="912.0" y="138" text-anchor="middle" font-size="13" fill="#8b949e">#e6f1ff</text>
+<text x="912.0" y="156" text-anchor="middle" font-size="12" fill="#8b949e">text</text>
+</svg>

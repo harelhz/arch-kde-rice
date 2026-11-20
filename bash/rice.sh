@@ -85,5 +85,11 @@ export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quo
 export BAT_THEME='ansi'
 # <<< harel-colors <<<
 
-# Starship prompt (overrides the bash prompt above if installed)
-command -v starship >/dev/null && eval "$(starship init bash)"
+# Shortcuts
+alias ff='fastfetch'
+alias c='clear'
+alias e='exit'
+alias reload='. ~/.bashrc'
+
+# Prefer Starship? Uncomment to use config/starship.toml instead of the prompt above:
+# command -v starship >/dev/null && eval "$(starship init bash)"
