@@ -47,11 +47,11 @@ for f in "$REPO"/config/kde/*; do
 done
 put "$REPO/bash/rice.sh" "$HOME/.config/bash/rice.sh"
 
-echo ">> themes, effects, icons"
+echo ">> themes, effects, scripts, icons"
 for d in color-schemes aurorae; do
   mkdir -p "$HOME/.local/share/$d"; cp -a "$REPO/local/share/$d/." "$HOME/.local/share/$d/"
 done
-for d in plasma/desktoptheme plasma/look-and-feel kwin/effects kwin/tabbox kwin-wayland/tabbox; do
+for d in plasma/desktoptheme plasma/look-and-feel kwin/effects kwin/scripts kwin/tabbox kwin-wayland/tabbox; do
   mkdir -p "$HOME/.local/share/$d"; cp -a "$REPO/local/share/$d/." "$HOME/.local/share/$d/"
 done
 mkdir -p "$HOME/.local/share/icons"; cp -a "$REPO"/local/share/icons/*.svg "$HOME/.local/share/icons/"

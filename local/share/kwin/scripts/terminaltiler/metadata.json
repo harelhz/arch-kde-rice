@@ -1,0 +1,15 @@
+{
+    "KPlugin": {
+        "Id": "terminaltiler",
+        "Name": "Terminal Tiler",
+        "Description": "Tiles terminal windows only. One terminal keeps its normal size; two or more split the screen between them. Other apps are never touched.",
+        "Icon": "utilities-terminal",
+        "Version": "1.0",
+        "License": "MIT",
+        "EnabledByDefault": false
+    },
+    "KPackageStructure": "KWin/Script",
+    "X-Plasma-API": "javascript",
+    "X-Plasma-MainScript": "code/main.js",
+    "X-KDE-ConfigModule": "kwin/effects/configs/kcm_kwin4_genericscripted"
+}

@@ -62,6 +62,7 @@ My Arch Linux + KDE Plasma 6 setup — from the terminal to the wallpaper.
 - 🪟 **Glass terminal** — Ghostty on pure black at 75% opacity, so the wallpaper shows through, with the Snazzy palette
 - ❯ **Two-line prompt** — `user@host in path on branch`, and the arrow turns **red** when the last command failed
 - 🎞️ **Kinetic animations** — springy open/close, maximize, squash and fading popups, at 0.5× animation speed for a snappy feel
+- 🧱 **Terminal Tiler** — my own KWin script: tiling for terminals only. One terminal keeps its normal size, open more and they split the screen into a grid, Firefox and everything else are left alone
 - 🔀 **Custom Alt+Tab** — four switchers included; **Glass Switch** is the default
 - 🔵 **Rounded everything** — rounded window corners via `kwin-effect-rounded-corners`, borderless windows
 - 🎨 **Colored CLI** — `eza` for `ls`, `bat` for `cat` and man pages, `grc` for network tools, plus a colorizer for John the Ripper output
@@ -105,6 +106,34 @@ My Arch Linux + KDE Plasma 6 setup — from the terminal to the wallpaper.
 | <kbd>Meta</kbd> + <kbd>PgUp</kbd> | Maximize window |
 | <kbd>Meta</kbd> + <kbd>F1</kbd>…<kbd>F4</kbd> | Switch desktop |
 | <kbd>Alt</kbd> + <kbd>F4</kbd> | Close window |
+
+</details>
+
+<details>
+<summary><b>🧱 Terminal Tiler (KWin script)</b></summary>
+
+Tiling like Krohnkite, but only for terminal windows (`local/share/kwin/scripts/terminaltiler`).
+
+- **One terminal** keeps the size it opened with — it's never made full screen
+- **Two or more** on the same screen and desktop fill that screen: 2 side by side, 3 as one left + two right, 4 as a 2×2 grid, 6 as 3×2…
+- Close or minimize back down to one and it returns to its original size and position
+- **Other apps are never touched** — opening a terminal over Firefox doesn't split Firefox
+- **Snap a terminal yourself** (<kbd>Meta</kbd> + arrows, or drag it to a screen edge) and it stays where you put it. Snap two to the left side and any other terminals tile on the right
+- Each monitor and virtual desktop tiles on its own; tiles stay clear of the floating dock
+- Drag a tiled terminal onto another to swap them; drag the middle edge to change the split
+- Works with Ghostty, Konsole, kitty, Alacritty, WezTerm, foot and more — the list is editable
+
+| Keys | Action |
+|---|---|
+| <kbd>Meta</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd> | Tiling on / off |
+| <kbd>Meta</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd> | Float / tile the active terminal |
+| <kbd>Meta</kbd> + <kbd>J</kbd> / <kbd>K</kbd> | Focus next / previous terminal |
+| <kbd>Meta</kbd> + <kbd>Shift</kbd> + <kbd>J</kbd> / <kbd>K</kbd> | Move terminal forward / back |
+| <kbd>Meta</kbd> + <kbd>Return</kbd> | Swap with the first (top-left) terminal |
+| <kbd>Meta</kbd> + <kbd>Shift</kbd> + <kbd>L</kbd> / <kbd>H</kbd> | Grow / shrink the left column |
+
+Layout (grid, master + stack, columns, rows), gap, split and the terminal list are in
+**System Settings → Window Management → KWin Scripts → Terminal Tiler ⚙**.
 
 </details>
 
@@ -156,7 +185,7 @@ arch-kde-rice/
 │   ├── plasma/        Desert-Dock, Orchis Plasma + look-and-feel
 │   ├── aurorae/       Orchis window decorations
 │   ├── color-schemes/
-│   └── kwin/          effects + Alt+Tab switchers
+│   └── kwin/          effects, Terminal Tiler script, Alt+Tab switchers
 ├── bash/rice.sh       → ~/.config/bash/rice.sh
 ├── wallpapers/        → ~/.local/share/wallpapers/arch-kde-rice/
 ├── sddm/              → /etc/sddm.conf.d/
@@ -177,7 +206,7 @@ cd arch-kde-rice
 
 | Flag | Does |
 |---|---|
-| *(none)* | Copies configs, themes, effects and the wallpaper |
+| *(none)* | Copies configs, themes, effects, the Terminal Tiler script and the wallpaper |
 | `--deps` | Installs the packages with pacman (+ `yay` for the AUR ones) |
 | `--sddm` | Installs the login screen config (asks for sudo) |
 

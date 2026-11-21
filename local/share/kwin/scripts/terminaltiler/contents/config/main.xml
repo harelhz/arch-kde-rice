@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0 http://www.kde.org/standards/kcfg/1.0/kcfg.xsd">
+  <kcfgfile name=""/>
+  <group name="">
+    <entry name="TerminalClasses" type="String">
+      <label>Window classes treated as terminals (comma separated)</label>
+      <default>com.mitchellh.ghostty,ghostty,org.kde.konsole,konsole,org.gnome.terminal,gnome-terminal-server,gnome-terminal,org.gnome.console,kgx,org.gnome.ptyxis,ptyxis,kitty,alacritty,org.wezfurlong.wezterm,wezterm,foot,footclient,xterm,uxterm,urxvt,st,st-256color,terminator,tilix,com.gexperts.tilix,xfce4-terminal,lxterminal,qterminal,terminology,cool-retro-term,dev.warp.warp,warp,rio,contour</default>
+    </entry>
+    <entry name="Layout" type="Int">
+      <label>Layout</label>
+      <default>3</default>
+      <min>0</min>
+      <max>3</max>
+    </entry>
+    <entry name="MasterRatio" type="Int">
+      <label>Master window width in percent</label>
+      <default>50</default>
+      <min>15</min>
+      <max>85</max>
+    </entry>
+    <entry name="Gap" type="Int">
+      <label>Gap between tiles in pixels</label>
+      <default>8</default>
+      <min>0</min>
+      <max>64</max>
+    </entry>
+    <entry name="AvoidFloatingPanels" type="Bool">
+      <label>Keep tiles clear of panels that windows can go below</label>
+      <default>true</default>
+    </entry>
+    <entry name="NewAsMaster" type="Bool">
+      <label>New terminals become the master window</label>
+      <default>false</default>
+    </entry>
+  </group>
+</kcfg>
