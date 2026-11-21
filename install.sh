@@ -31,8 +31,8 @@ fi
 put() {
   local src="$1" dest="$2"
   if [ -e "$dest" ]; then
-    mkdir -p "$BACKUP/$(dirname "${dest#$HOME/}")"
-    cp -a "$dest" "$BACKUP/${dest#$HOME/}"
+    mkdir -p "$BACKUP/$(dirname "${dest#"$HOME"/}")"
+    cp -a "$dest" "$BACKUP/${dest#"$HOME"/}"
   fi
   mkdir -p "$(dirname "$dest")"
   cp -a "$src" "$dest"

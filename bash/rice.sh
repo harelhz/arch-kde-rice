@@ -1,3 +1,4 @@
+# shellcheck shell=bash
 # Prompt + colors from my rice. Source it from ~/.bashrc:
 #   [ -f ~/.config/bash/rice.sh ] && . ~/.config/bash/rice.sh
 
@@ -53,6 +54,7 @@ fi
 if command -v grc >/dev/null 2>&1; then
   for __c in nmap ping traceroute dig whois netstat ss ps df du free mount lsblk id uptime lsof ifconfig make gcc \
              tcpdump iptables lspci lsmod blkid findmnt stat sysctl last vmstat sensors getfacl; do
+    # shellcheck disable=SC2139  # expanding now is the point: one alias per tool
     alias "$__c=grc --colour=auto $__c"
   done
   unset __c
