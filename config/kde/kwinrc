@@ -50,6 +50,7 @@ kwin6_effect_glideEnabled=false
 maximizeEnabled=false
 scaleEnabled=false
 slideupEnabled=true
+terminaltilerEnabled=true
 wobblywindowsEnabled=true
 
 [TabBox]

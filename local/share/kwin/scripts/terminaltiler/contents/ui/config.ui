@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TerminalTilerConfig</class>
+ <widget class="QWidget" name="TerminalTilerConfig">
+  <layout class="QFormLayout" name="formLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="labelLayout">
+     <property name="text">
+      <string>Layout:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QComboBox" name="kcfg_Layout">
+     <item>
+      <property name="text">
+       <string>Master and stack (one big on the left, the rest stacked on the right)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Columns (side by side, equal width)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Rows (on top of each other, equal height)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Grid (2 side by side, 4 in a 2×2 grid, 6 in 3×2…)</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="labelRatio">
+     <property name="text">
+      <string>Left column width:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QSpinBox" name="kcfg_MasterRatio">
+     <property name="suffix">
+      <string> %</string>
+     </property>
+     <property name="minimum">
+      <number>15</number>
+     </property>
+     <property name="maximum">
+      <number>85</number>
+     </property>
+     <property name="value">
+      <number>50</number>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="labelGap">
+     <property name="text">
+      <string>Gap:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QSpinBox" name="kcfg_Gap">
+     <property name="suffix">
+      <string> px</string>
+     </property>
+     <property name="minimum">
+      <number>0</number>
+     </property>
+     <property name="maximum">
+      <number>64</number>
+     </property>
+     <property name="value">
+      <number>8</number>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QCheckBox" name="kcfg_NewAsMaster">
+     <property name="text">
+      <string>New terminals become the master window</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="QCheckBox" name="kcfg_AvoidFloatingPanels">
+     <property name="text">
+      <string>Keep tiles clear of panels that windows can go below (floating docks)</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <widget class="QLabel" name="labelClasses">
+     <property name="text">
+      <string>Terminal classes:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <widget class="QLineEdit" name="kcfg_TerminalClasses">
+     <property name="toolTip">
+      <string>Comma separated window classes or app IDs that count as terminals. Find a window's class with Alt+F3 → More Actions → Configure Special Window Settings → Detect Window Properties.</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0" colspan="2">
+    <widget class="QLabel" name="labelHint">
+     <property name="text">
+      <string>A single terminal keeps the size it opened with. Two or more terminals on the same screen and desktop fill that screen. A terminal you snap yourself (Meta+arrows or dragging to a screen edge) stays where you put it. Other windows are never moved. Keyboard shortcuts are under System Settings → Keyboard → Shortcuts → KWin ("Terminal Tiler: …").</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
