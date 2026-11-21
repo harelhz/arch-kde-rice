@@ -28,7 +28,7 @@
     </entry>
     <entry name="AvoidFloatingPanels" type="Bool">
       <label>Keep tiles clear of panels that windows can go below</label>
-      <default>true</default>
+      <default>false</default>
     </entry>
     <entry name="NewAsMaster" type="Bool">
       <label>New terminals become the master window</label>

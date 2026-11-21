@@ -16,8 +16,8 @@
  *    it. Un-snap it and it joins the automatic tiling again.
  *  - Drag a tiled terminal onto another one to swap them. Drag the edge
  *    between the left and right column to change the split.
- *  - Panels set to "Windows go below" (like a floating dock) don't reserve
- *    space, so tiles stop short of them.
+ *  - Tiles fill the whole work area; a dock set to "Windows go below" floats
+ *    over them. Turn on "Keep tiles clear of panels" to stop short of it.
  */
 "use strict";
 
@@ -44,7 +44,7 @@ var cfg = {
     ratio: 0.5,
     layout: LAYOUT_GRID,
     newAsMaster: false,
-    avoidPanels: true
+    avoidPanels: false
 };
 
 /* ------------------------------------------------------------------ state */
@@ -96,7 +96,7 @@ function loadConfig() {
     cfg.ratio = clampRatio(toNumber(readConfig("MasterRatio", 50), 50) / 100);
     cfg.layout = Math.round(clamp(toNumber(readConfig("Layout", LAYOUT_GRID), LAYOUT_GRID), 0, LAYOUT_COUNT - 1));
     cfg.newAsMaster = toBool(readConfig("NewAsMaster", false), false);
-    cfg.avoidPanels = toBool(readConfig("AvoidFloatingPanels", true), true);
+    cfg.avoidPanels = toBool(readConfig("AvoidFloatingPanels", false), false);
 }
 
 function idOf(w) {

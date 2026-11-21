@@ -119,7 +119,7 @@ Tiling like Krohnkite, but only for terminal windows (`local/share/kwin/scripts/
 - Close or minimize back down to one and it returns to its original size and position
 - **Other apps are never touched** — opening a terminal over Firefox doesn't split Firefox
 - **Snap a terminal yourself** (<kbd>Meta</kbd> + arrows, or drag it to a screen edge) and it stays where you put it. Snap two to the left side and any other terminals tile on the right
-- Each monitor and virtual desktop tiles on its own; tiles stay clear of the floating dock
+- Each monitor and virtual desktop tiles on its own; tiles fill the screen and the dock floats over them (an option keeps them clear of it)
 - Drag a tiled terminal onto another to swap them; drag the middle edge to change the split
 - Works with Ghostty, Konsole, kitty, Alacritty, WezTerm, foot and more — the list is editable
 
