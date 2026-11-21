@@ -1,0 +1,21 @@
+name: checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  scripts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: shellcheck install.sh and bash/rice.sh
+        run: shellcheck install.sh bash/rice.sh
+
+      - name: Terminal Tiler parses
+        run: |
+          node --check local/share/kwin/scripts/terminaltiler/contents/code/main.js
+          python3 -m json.tool local/share/kwin/scripts/terminaltiler/metadata.json > /dev/null
+          python3 -c "import xml.dom.minidom as m; m.parse('local/share/kwin/scripts/terminaltiler/contents/config/main.xml'); m.parse('local/share/kwin/scripts/terminaltiler/contents/ui/config.ui')"
